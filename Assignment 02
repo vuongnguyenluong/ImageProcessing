@@ -1,8 +1,12 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+//random parameter x
 x = np.random.choice(range(20), 10, replace=False)
+
+//Apply x to y
 y = 5 + 3*x
 
+//Create the plot
 plt.plot(x, y, marker = 'o', markerfacecolor='black')
 plt.show()
