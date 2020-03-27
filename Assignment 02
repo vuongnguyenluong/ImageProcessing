@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 x = np.random.choice(range(20), 10, replace=False)
 
 //Apply x to y
-y = 5 + 3*x
+y = np.random.randint(-3,3,1)[0] + 3*x
 
 //Create the plot
 plt.plot(x, y, marker = 'o', markerfacecolor='black')
