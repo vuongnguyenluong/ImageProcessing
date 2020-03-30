@@ -1,12 +1,18 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-//random parameter x
-x = np.random.choice(range(20), 10, replace=False)
+#DATA INPUT
+#-------------------------------------------------------------------------
+# Generate a random x
+x = np.random.normal(0, 4, 80)
 
-//Apply x to y
-y = np.random.randint(-3,3,1)[0] + 3*x
+# Get y: add a standard deviation to get a more realistic data
+y = 5 * (x + np.random.normal(0, 1, 80)) + 6 
+y_actual = 5 * x + 6
 
-//Create the plot
-plt.plot(x, y, marker = 'o', markerfacecolor='black')
+plt.scatter(x, y, color='k')
+plt.plot(x, y_actual, color='b')
 plt.show()
+
+#OUTPUT RESULTS
+#-------------------------------------------------------------------------
